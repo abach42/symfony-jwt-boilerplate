@@ -19,11 +19,19 @@ composer install
 ```
 symfony console lexik:jwt:generate-keypair
 ```
-4. Load fixtures
+
+4. Start database
+```
+docker compose up
+```
+
+5. Load fixtures
 ```
 symfony console doctrine:migrations:migrate
+symfony console doctrine:fixtures:load
 ```
-5. 
+
+6. Start symfony server
 ```
 symfony serve
 ```
@@ -56,7 +64,18 @@ Authorization: Bearer {token}
 ###
 ```
 
-```json
+### Example
+```
+###
+ 
+GET https://localhost:8000/home HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODc0NTk2NzksImV4cCI6MTY4NzU4OTI3OSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImVtYWlsIjoibXlAZXhhbXBsZS5jb20ifQ.j6Mmrn8spg1PKN8JCrQAmxx11-yULFKeYayH3lFVTZPRPNJwVsJ1JzAl66qt7ozAx1OLBYRfUc7iXuDC6i5561yemrhI0Fr-88vUO8Iofpuk6yy9K2YuVbdFciu6jvsz2Tp1nCswCYpKO--F83abLdx6w6nflq2Ol9b4wH2XA1H4HTVGage2jaOczM5rpWf5iOEjN13K-KhKdHIVLmaJ03A2m9_JzJK31EovxvWnFWSx6BEygkl7DnYzGTD4tcI4DpNPOKrzAEfIa3cdHEJkiA7QAaop0ebVT2Mr_AAtlo5y1yda-sv5fZUhzdmtZzIfMf1qYb8HTSsKCsnBsNKmrw
+
+###
+```
+
+### Response could be
+```
 {
     "iat": 1234567890,
     "exp": 1234567890,
