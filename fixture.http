@@ -14,6 +14,6 @@ Content-Type: application/json
 ###
  
 GET https://localhost:8000/home HTTP/1.1
-Authorization: Bearer {token}
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODc3NjY5NzMsImV4cCI6MTY4Nzg5NjU3Mywicm9sZXMiOlsiUk9MRV9VU0VSIl0sImVtYWlsIjoibXlAZXhhbXBsZS5jb20ifQ.CKAPmXc3-iPdl4Fsm_z8E4Voc2qIfxOq4A0hZvbgkWO2tjcw9xdZymyc7eyEVAl-cL-xqWNejw6bqOnY5Jr3BBlKHpUcxboo210-5EfR8HAZ72BWS2JpUijEqGxe5N0Rs8yII_r9fqWmYH1yEOYdi1QAKG1jgf3pXonWZeoyvOdOB9AO3tq6p1NNxiZaWuXpqIRB2asjRPUco7VA0lJxExRvTLIlq-rwxVrxAOFSUJddq9532UV8SgvZeZOOSan1uK3qBd-NHnxyFQzbgqmXZcwCke33Ly-czQGf74fK6K3De1Nvup1DUeqd-8NOTtvwK0qUc-wCIAyK3vQvywFseQ
 
 ###
